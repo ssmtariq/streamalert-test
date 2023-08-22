@@ -224,7 +224,7 @@ def generate_main(config, init=False):
         main_dict['resource']['aws_s3_bucket']['logging_bucket'] = generate_s3_bucket(
             bucket=logging_bucket,
             logging=logging_bucket,
-            acl='log-delivery-write',
+            # acl='log-delivery-write',
             lifecycle_rule={
                 'prefix': '/',
                 'enabled': True,
